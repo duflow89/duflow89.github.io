@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./Aside.module.scss";
+import keywordList from "@resources/keywords.json";
 
 const Aside = () => (
   <aside className={styles.aside}>
@@ -12,14 +13,9 @@ const Aside = () => (
     <div className={styles.asideComment}>I work diligently to become lazy ☕</div>
 
     <ul className={styles.asideKeyword}>
-      <li>Java</li>
-      <li>Spring Boot</li>
-      <li>Data JPA</li>
-      <li>querydsl</li>
-      <li>SQL</li>
-      <li>Azure</li>
-      <li>k8s</li>
-      <li>Maven</li>
+      {keywordList.map((keyword) => (
+        <li key={keyword}>{keyword}</li>
+      ))}
     </ul>
   </aside>
 );
