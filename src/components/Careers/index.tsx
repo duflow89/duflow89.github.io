@@ -1,5 +1,5 @@
 import styles from "./Career.module.scss";
-import careerList from "@resources/career.json";
+import careerList from "@resources/careers.json";
 
 const Careers = () => (
   <div className={styles.career}>
