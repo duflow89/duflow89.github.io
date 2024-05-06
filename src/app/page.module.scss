@@ -1,0 +1,16 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+  gap: 3rem;
+  margin: auto;
+}
+
+@media all and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
