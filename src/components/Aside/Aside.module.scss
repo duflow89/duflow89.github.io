@@ -67,12 +67,13 @@
       align-items: center;
       gap: 0.5rem;
       height: 1.5rem;
-      padding: 0.5rem 1rem 0.5rem 2rem;
+      padding: 0.5rem 0.5rem 0.5rem 2rem;
       border-radius: var(--rounded-md);
+      color: hsl(var(--zinc-100));
       overflow: hidden;
     }
 
-    svg {
+    &-logo {
       position: absolute;
       left: -0.2rem;
       top: 50%;
@@ -87,7 +88,12 @@
       position: relative;
       z-index: 1;
       font-size: var(--text-xs);
-      color: hsl(var(--zinc-100));
+    }
+
+    &-arrow {
+      width: 1rem;
+      height: 1rem;
+      margin-left: auto;
     }
 
     &-tistory {
@@ -129,13 +135,11 @@
       a {
         width: 100%;
         height: 2rem;
-        padding: 0.5rem 1rem 0.5rem 2rem;
         border-radius: var(--rounded-xl);
-        color: hsl(var(--zinc-100));
         font-size: var(--text-sm);
       }
 
-      svg {
+      &-logo {
         left: -0.25rem;
         width: 3rem;
         height: 3rem;
