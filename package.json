@@ -2,6 +2,7 @@
   "name": "duflow89.github.io",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://duflow89.github.io/blog",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -21,6 +22,7 @@
     "eslint-config-next": "14.2.3",
     "eslint-config-prettier": "^9.1.0",
     "prettier": "^3.2.5",
+    "sass": "^1.76.0",
     "typescript": "^5.4.5"
   }
 }
