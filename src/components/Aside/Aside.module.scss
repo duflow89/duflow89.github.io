@@ -52,6 +52,52 @@
       cursor: default;
     }
   }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+
+    a {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      height: 1.5rem;
+      padding: 0.5rem 1rem 0.5rem 2rem;
+      border-radius: var(--rounded-md);
+      overflow: hidden;
+    }
+
+    svg {
+      position: absolute;
+      left: -0.2rem;
+      top: 50%;
+      width: 2rem;
+      height: 2rem;
+      color: hsla(var(--zinc-100), 80%);
+      opacity: 0.3;
+      transform: translateY(-50%);
+    }
+
+    span {
+      position: relative;
+      z-index: 1;
+      font-size: var(--text-xs);
+      color: hsl(var(--zinc-100));
+    }
+
+    &-tistory {
+      background-color: hsla(15, 84%, 52%, 80%);
+    }
+
+    &-github {
+      background-color: hsl(210, 12%, 16%, 80%);
+    }
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -62,7 +108,7 @@
     top: 50%;
     left: 0;
     bottom: 0;
-    padding: 3rem 1rem;
+    padding: 3rem 1rem 1rem;
     background-color: hsla(var(--zinc-100), 50%);
     border-radius: var(--rounded-4xl);
     transform: translateY(-50%);
@@ -74,6 +120,42 @@
           background-color: hsla(var(--primary-color));
           color: hsla(var(--teal-50));
         }
+      }
+    }
+
+    &-link {
+      gap: 0.5rem;
+
+      a {
+        width: 100%;
+        height: 2rem;
+        padding: 0.5rem 1rem 0.5rem 2rem;
+        border-radius: var(--rounded-xl);
+        color: hsl(var(--zinc-100));
+        font-size: var(--text-sm);
+      }
+
+      svg {
+        left: -0.25rem;
+        width: 3rem;
+        height: 3rem;
+        opacity: 0.4;
+      }
+
+      &-tistory {
+        background-color: hsla(15, 84%, 52%, 60%);
+      }
+
+      &-github {
+        background-color: hsl(210, 12%, 16%, 60%);
+      }
+
+      &-tistory:hover {
+        background-color: hsla(15, 84%, 52%, 100%);
+      }
+
+      &-github:hover {
+        background-color: hsl(210, 12%, 16%, 100%);
       }
     }
   }
