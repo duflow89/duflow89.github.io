@@ -15,19 +15,20 @@
   &-thumb {
     position: relative;
     z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin: auto;
     border-radius: var(--rounded-full);
     mix-blend-mode: plus-lighter;
     filter: grayscale(50%);
   }
 
   &-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: var(--text-4xl);
+    font-size: var(--text-2xl);
     font-style: italic;
     font-weight: 900;
-    transform: translate(-50%, -50%);
+    text-align: center;
+    text-indent: -3px;
     color: hsla(var(--primary-color));
   }
 
@@ -118,6 +119,15 @@
     background-color: hsla(var(--zinc-100), 50%);
     border-radius: var(--rounded-4xl);
     transform: translateY(-50%);
+
+    &-thumb {
+      width: 130px;
+      height: 130px;
+    }
+
+    &-title {
+      font-size: var(--text-4xl);
+    }
 
     &-keyword {
       li {

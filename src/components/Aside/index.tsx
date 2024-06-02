@@ -26,7 +26,7 @@ const Aside = () => (
         <span>DEV Blog</span>
 
         <svg viewBox="0 0 24 24" className={styles.asideLinkArrow}>
-          <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </a>
 
@@ -37,7 +37,7 @@ const Aside = () => (
         <span>GitHub</span>
 
         <svg viewBox="0 0 24 24" className={styles.asideLinkArrow}>
-          <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </a>
     </div>

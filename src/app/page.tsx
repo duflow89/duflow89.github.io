@@ -8,7 +8,7 @@ const HomePage = () => (
     <Aside />
 
     <div className={styles.homeContainer}>
-      <Activities />
+      {/* <Activities /> */}
 
       <Careers />
     </div>

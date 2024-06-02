@@ -6,8 +6,8 @@ const Careers = () => (
     <h2>CAREER</h2>
 
     <ol className={styles.careerList}>
-      {careerList.map(({ from, to, contents }) => (
-        <li className={styles.careerItem} key={`${from}${to}`}>
+      {careerList.map(({ id, from, to, contents }) => (
+        <li className={styles.careerItem} key={id}>
           <div className={styles.careerPeriod}>
             {from && <span className={styles.careerPeriodFrom}>{from}</span>}
             {" - "}
